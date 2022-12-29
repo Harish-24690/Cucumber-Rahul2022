@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="cucumberOptions.TestngRunner"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Failedtests">
+    <classes>
+      <class name="cucumberOptions.FailedTestsRunner"/>
+    </classes>
+  </test> <!-- Failedtests -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="cucumberOptions.TestngRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="2"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestngRunner -->
+      <class name="cucumberOptions.FailedTestsRunner">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- cucumberOptions.FailedTestsRunner -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

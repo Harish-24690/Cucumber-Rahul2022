@@ -1,0 +1,205 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-29T08:12:38.866Z",
+        "line": 15,
+        "name": "login to website and verify if the product added to cart is matched",
+        "description": "",
+        "id": "login-to-webisite-and-verify-if-the-product-added-to-cart;login-to-website-and-verify-if-the-product-added-to-cart-is-matched;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 822000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12530000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the Homepage",
+            "match": {
+              "location": "stepDefinitions.HomepageStepDefintions.user_is_on_the_homepage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 5000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.screenShot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3294000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User search for item with shortname Tom and verify the item displayed.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tom",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.HomepageStepDefintions.user_search_for_item_with_shortname_something_and_verify_the_item_displayed(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.screenShot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4717000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User increase the count of the item to \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.HomepageStepDefintions.user_increase_the_count_of_the_item_to_something(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.screenShot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 778000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User navigates to checkout page and verifies if the Apply button is displayed",
+            "match": {
+              "location": "stepDefinitions.CheckOutStepDefinitions.user_navigates_to_checkout_page_and_verifies_if_the_apply_button_is_displayed()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.screenShot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User verifies the checkout button is displayed",
+            "match": {
+              "location": "stepDefinitions.CheckOutStepDefinitions.user_verifies_the_checkout_button_is_displayed()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.screenShot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User verify the Tom added to cart is matched",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tom",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.CheckOutStepDefinitions.user_verify_the_added_to_cart_is_matched(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.Hooks.screenShot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout"
+          }
+        ]
+      }
+    ],
+    "name": "login to webisite and verify if the product added to cart",
+    "description": "",
+    "id": "login-to-webisite-and-verify-if-the-product-added-to-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/checkout.feature",
+    "tags": [
+      {
+        "name": "@checkout",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
