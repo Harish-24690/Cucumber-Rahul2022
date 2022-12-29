@@ -30,7 +30,7 @@ String browser=	System.getProperty("browser")!=null ? System.getProperty("browse
 		if(browser.equalsIgnoreCase("chrome")){
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-		}else if(prop.getProperty("browser").equalsIgnoreCase("firefiox")){
+		}else if(browser.equalsIgnoreCase("firefiox")){
 			driver= new FirefoxDriver();
 		}
 		
