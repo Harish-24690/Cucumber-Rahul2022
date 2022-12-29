@@ -24,8 +24,10 @@ public class TestBase {
 		prop.load(fis);
 		String Url=prop.getProperty("url");
 		
+String browser=	System.getProperty("browser")!=null ? System.getProperty("browser"):prop.getProperty("browser");
+		
 		if(driver==null){
-		if(prop.getProperty("browser").equalsIgnoreCase("chrome")){
+		if(browser.equalsIgnoreCase("chrome")){
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}else if(prop.getProperty("browser").equalsIgnoreCase("firefiox")){
